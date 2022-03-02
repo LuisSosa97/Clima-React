@@ -2,15 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background: linear-gradient(to bottom,  #5aecd9,  #9bd5e4, #2acdd380);
 
 }
 .header {
-  background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8a79d3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #54dac8, #b3aef5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #d6f3f1, #5aecd9,#0c9c89 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 nav .brand-logo {
@@ -19,11 +18,11 @@ nav .brand-logo {
   position: relative;
 }
 .input-field label {
-  color: white;
+  color: rgb(15, 15, 15);
 }
 
 .input-field input[type=text]:focus + label {
-  color: white;
+  color: rgb(10, 10, 10);
 } 
 
 .input-field input[type=text]:focus {
@@ -46,9 +45,9 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
 
 .contenedor-form {
   padding: 3rem 0 1px 0;
-  background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #a390b4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9bd5e4, #2acdd380, #5aecd9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9bd5e4, #2acdd380, #5aecd9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .buscador i {
@@ -58,7 +57,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 
 .error {
   padding: 1rem!important;
-  color:white;
+  color:rgb(138, 143, 211);
   margin-top: 3rem;
   text-align: center;
 }
