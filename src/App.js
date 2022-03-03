@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from './components/supabaseClient'
 import Auth from './components/auth/Auth'
 import Account from './components/account/Account'
-import { Routes } from './components/Routes';
+import  Routes  from './components/Routes/Routes';
 
 
 

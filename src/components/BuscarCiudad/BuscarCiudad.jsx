@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 //componentes
-import Header from './components/Header';
-import Formulario from './components/Formulario';
-import Error from './components/Error';
-import ResultadoClima from './components/ResultadoClima';
+import Header from '../Header/header';
+import Formulario from '../Formulario/Formulario';
+import Error from '../Error/Error';
+import ResultadoClima from '../ResultadoClima/ResultadoClima';
 
 export default function BuscarCiudad() {
 

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { supabase } from "../supabaseClient";
 import { Routes , Route } from "react-router-dom";
 
-import { BuscarCiudad } from "../BuscarCiudad/BuscarCiudad";
+import  BuscarCiudad  from "../BuscarCiudad/BuscarCiudad";
 
 
 export default function Rotas({ session }) {
