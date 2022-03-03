@@ -1,18 +1,20 @@
 import { useState, useEffect } from "react";
-import { supabase } from "../../config/supabaseClient";
-import AppBar from '../../components/AppBar';
+import { supabase } from "../supabaseClient";
+
  import { Routes , Route } from "react-router-dom";
 import Account from "../Account";
+/*
 import Formulario from "../Formulario";
 import Header from "../Header";
 import ResultadoClima from "../ResultadoClima";
+import { BuscarCiudad } from "../BuscarCiudad";*/
 
 
 export default function Rotas({ session }) {
     const [, setLoading] = useState(true);
     const [, setUsername] = useState(null);
     const [, setWebsite] = useState(null);
-    const [, setAvatarUrl] = useState(null);
+    
     const [, setTitulo] = useState(null);
     const [, setFechaCreacion] = useState(null);
     const [, setFechaRecordatorio] = useState(null);
@@ -46,7 +48,7 @@ export default function Rotas({ session }) {
             if (data) {
                 setUsername(data.username);
                 setWebsite(data.website);
-                setAvatarUrl(data.avatar_url);
+                
             }
         } catch (error) {
             console.log(error);
