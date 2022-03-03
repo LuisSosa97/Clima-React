@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header({titulo}) {
+export default function Header({titulo}) {
     return(
         <nav>
             <div className=" header nav-wrapper light-blue darken-2">
@@ -9,5 +9,3 @@ function Header({titulo}) {
         </nav>
     )
 }
- 
-export default Header;

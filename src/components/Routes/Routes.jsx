@@ -1,13 +1,9 @@
+
 import { useState, useEffect } from "react";
 import { supabase } from "../supabaseClient";
+import { Routes , Route } from "react-router-dom";
 
- import { Routes , Route } from "react-router-dom";
-import Account from "../Account";
-/*
-import Formulario from "../Formulario";
-import Header from "../Header";
-import ResultadoClima from "../ResultadoClima";
-import { BuscarCiudad } from "../BuscarCiudad";*/
+import { BuscarCiudad } from "../BuscarCiudad/BuscarCiudad";
 
 
 export default function Rotas({ session }) {
@@ -93,14 +89,12 @@ export default function Rotas({ session }) {
     return (
         
         <div className="form-widget">
-         <AppBar/>
+         
 
            
             <Routes>
-                        <Route path='/Account' element={<Account key={session.user.id} session={session}  />}/>
-                        <Route path='/Recordatorios' element={<Recordatorios key={session.user.id} session={session}  />}/>
-                        <Route path='/AddRecordatorio' element={<AddRecordatorio key={session.user.id} session={session}/>}/>
-                        <Route path='/' element={<RecordatorioHome key={session.user.id} session={session}/>}/>
+                        <Route path='/account' element={<account key={session.user.id} session={session}  />}/>
+                        <Route path='/' element={<BuscarCiudad key={session.user.id} session={session}  />}/>
             </Routes>
 
         </div>
