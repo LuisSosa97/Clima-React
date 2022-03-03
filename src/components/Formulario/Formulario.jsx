@@ -75,7 +75,7 @@ function Formulario({datosConsulta}) {
 
     <div className="input-field col s10">
     <Button variant="outlined" type="submit" className="waves-effect waves-light btn-large btn-block white accent-4"
-    >Outlined</Button>
+    >Ver Clima</Button>
 </div>
         </form>
     )
