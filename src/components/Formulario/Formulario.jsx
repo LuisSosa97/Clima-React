@@ -1,4 +1,10 @@
 import React, { useState} from 'react';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import Button from '@mui/material/Button';
+
 
 function Formulario({datosConsulta}) {
 
@@ -39,21 +45,38 @@ function Formulario({datosConsulta}) {
                 <label htmlFor="ciudad">Ciudad: </label>
             </div>
 
-            <div className="input-field col s12">
-                <select onChange={handleChange} name="pais">
-                    <option value="seleccione un paìs"></option>
-                    <option value="US">Estados Unidos</option>
-                    <option value="MX">Mèxico</option>
-                    <option value="AR">Argentina</option>
-                    <option value="CO">Colombia</option>
-                    <option value="PE">Peru</option>
-                    <option value="ES">España</option>
-                </select>
-            </div>
+            <div>
+      <FormControl sx={{ m: 1, minWidth: 80 }}>
+        <InputLabel id="demo-simple-select-autowidth-label">País</InputLabel>
+        <Select
+          labelId="demo-simple-select-autowidth-label"
+          id="demo-simple-select-autowidth"
+          name='pais'
+         
+          onChange={handleChange}
+          autoWidth
+          label="Selecciona País"
+        >
+          <MenuItem value="">
+            <em>Elige un país</em>
+          </MenuItem>
+          
+          <MenuItem value="US">Estados Unidos</MenuItem>
+          <MenuItem value="MX">Mèxico</MenuItem>
+          <MenuItem value="AR">Argentina</MenuItem>
+          <MenuItem value="CO">Colombia</MenuItem>
+          <MenuItem value="PE">Peru</MenuItem>
+          <MenuItem value="ES">España</MenuItem>
+        </Select>
+        
+        
+      </FormControl>
+    </div>
 
-            <div className="input-field col s12">
-                <input type="submit" className="waves-effect waves-light btn-large btn-block white accent-4" value="Buscar CLima"/>
-            </div>
+    <div className="input-field col s10">
+    <Button variant="outlined" type="submit" className="waves-effect waves-light btn-large btn-block white accent-4"
+    >Outlined</Button>
+</div>
         </form>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 //componentes
-import Header from '../Header/header';
+
 import Formulario from '../Formulario/Formulario';
 import Error from '../Error/Error';
 import ResultadoClima from '../ResultadoClima/ResultadoClima';
@@ -75,14 +75,12 @@ export default function BuscarCiudad() {
 
   return (
     <div className="App">
-      <Header 
-      titulo="Clima con React"
-      />
+     
 
       <div className="contenedor-form">
         <div className="container">
           <div className="row">
-            <div className="col s12 m6">
+            <div className="col s3 m6">
               <Formulario 
                 datosConsulta={datosConsulta}
               />
