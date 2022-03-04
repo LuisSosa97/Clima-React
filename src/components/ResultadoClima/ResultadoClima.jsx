@@ -9,6 +9,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import Typography from '@mui/material/Typography';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+//import { AppBar } from '@material-ui/core';
+import  AppBar  from '../AppBar/AppBar';
 
 
 function ResultadoClima({resultado}) {
@@ -23,8 +25,9 @@ function ResultadoClima({resultado}) {
 
     console.log(resultado);
     return (
-        
-        
+        <div>
+      <AppBar/>
+
             <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         
@@ -66,7 +69,7 @@ function ResultadoClima({resultado}) {
         
       </Collapse>
     </Card>
-      
+      </div>
     )
 }
 

@@ -4,6 +4,8 @@ import { Routes , Route } from "react-router-dom";
 import  BuscarCiudad  from "../BuscarCiudad/BuscarCiudad";
 import Account from "../Account/Account";
 import ResultadoClima from "../ResultadoClima/ResultadoClima";
+import { AppBar } from "@mui/material";
+import AppBar  from "../AppBar/AppBar"
 
 export default function Rotas({ session }) {
     const [, setLoading] = useState(true);
@@ -48,7 +50,7 @@ export default function Rotas({ session }) {
         
         <div className="form-widget">
          
-
+            <AppBar/>
            
             <Routes>
                         <Route path='/Account' element={<Account key={session.user.id} session={session}  />}/>
