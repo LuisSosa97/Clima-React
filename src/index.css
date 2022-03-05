@@ -6,8 +6,8 @@ body {
   --custom-bg-color: #bcecee;
   --custom-panel-color: rgb(34, 34, 34);
   --custom-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.8);
-  --custom-color: rgb(212, 99, 99);
-  --custom-color-brand: #8e7fd1;
+  --custom-color: rgb(20, 20, 20);
+  --custom-color-brand: #15939c;
   --custom-color-secondary: #666;
   --custom-border: 1px solid rgb(51, 51, 51);
   --custom-border-radius: 5px;
@@ -363,7 +363,7 @@ button.primary,
 }
 
 .form-widget .button:hover {
-  background-color: #8569c7;
+  background-color: #197b94;
 }
 
 .form-widget .button > .loader {

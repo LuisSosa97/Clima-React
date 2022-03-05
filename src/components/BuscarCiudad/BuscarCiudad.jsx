@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 //componentes
-
+import  Carousel from '../Carousel/Carousel';
 import Formulario from '../Formulario/Formulario';
 import Error from '../Error/Error';
 import ResultadoClima from '../ResultadoClima/ResultadoClima';
-
+import AppBar from '../AppBar/AppBar';
 export default function BuscarCiudad() {
 
   //State principal
@@ -73,7 +73,11 @@ export default function BuscarCiudad() {
                   />;
   }
 
+
   return (
+    <div>
+        <AppBar/>
+        <Carousel/>
     <div className="App">
      
 
@@ -92,6 +96,7 @@ export default function BuscarCiudad() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
