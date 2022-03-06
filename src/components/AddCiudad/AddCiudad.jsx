@@ -6,13 +6,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-}
-
-function TabPanel(props: TabPanelProps) {
+function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
@@ -32,7 +26,7 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 
-function a11yProps(index: number) {
+function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
@@ -42,7 +36,7 @@ function a11yProps(index: number) {
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = () => {
     setValue(newValue);
   };
 
@@ -74,7 +68,15 @@ export default function BasicTabs() {
         </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
-          Aqui puedes gregar tu foto
+      <Avatar
+                url={avatar_url}
+                size={150}
+                onUpload={(url) => {
+                    setAvatarUrl(url);
+                    updateProfile({ username, website, avatar_url: url });
+                }}
+            />
+        Aqui puedes gregar tu foto
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
