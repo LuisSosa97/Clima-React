@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import React from 'react';
 import { supabase } from '../supabaseClient'
 
+
 export default function Account({ session }) {
   const [loading, setLoading] = useState(true)
   const [username, setUsername] = useState(null)
@@ -67,6 +68,8 @@ export default function Account({ session }) {
   }
 
   return (
+
+
     <div className="form-widget">
       <div>
         <label htmlFor="email">Email</label>

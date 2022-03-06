@@ -74,7 +74,7 @@ function App() {
               textAlign: "center",
               maxWidth: "850px",
               maxHeight: "500px",
-              margin: "40px auto",
+              margin: "100px auto",
             }}
             
           />
