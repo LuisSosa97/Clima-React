@@ -9,6 +9,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import Typography from '@mui/material/Typography';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import addClimasFav from '../addClimaFav/addClima';
 
 
 function ResultadoClima({resultado}) {
@@ -56,7 +57,7 @@ function ResultadoClima({resultado}) {
       </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" onClick={()=> addClimasFav()}>
           <FavoriteIcon />
         </IconButton>
         <IconButton aria-label="share">
