@@ -46,8 +46,8 @@ function Formulario({datosConsulta}) {
             </div>
 
             <div>
-      <FormControl sx={{ m: 1, minWidth: 80 }}>
-        <InputLabel id="demo-simple-select-autowidth-label">País</InputLabel>
+      <FormControl sx={{ m: 1, minWidth: 300 }}>
+        <InputLabel id="demo-simple-select-autowidth-label">Selecciona un País</InputLabel>
         <Select
           labelId="demo-simple-select-autowidth-label"
           id="demo-simple-select-autowidth"
@@ -55,10 +55,10 @@ function Formulario({datosConsulta}) {
          
           onChange={handleChange}
           autoWidth
-          label="Selecciona País"
+          
         >
           <MenuItem value="">
-            <em>Elige un país</em>
+         
           </MenuItem>
           
           <MenuItem value="US">Estados Unidos</MenuItem>
