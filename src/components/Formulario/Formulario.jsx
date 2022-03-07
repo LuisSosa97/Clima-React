@@ -1,9 +1,13 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from "react";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Button from '@mui/material/Button';
+import AddClimaFav from "../AddClimaFav/AddClimaFav";
+import { supabase } from "../supabaseClient";
+import Auth from "../auth/Auth";
+
 
 
 function Formulario({datosConsulta}) {
@@ -14,6 +18,15 @@ function Formulario({datosConsulta}) {
         ciudad : '',
         pais : ''
     })
+    const [session, setSession] = useState(null);
+
+  useEffect(() => {
+    setSession(supabase.auth.session());
+
+    supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+    });
+  }, []);
 
     const handleChange = e => {
         //cambiar el state
@@ -76,6 +89,16 @@ function Formulario({datosConsulta}) {
     <div className="input-field col s10">
     <Button variant="outlined" type="submit" className="waves-effect waves-light btn-large btn-block white accent-4"
     >Ver Clima</Button>
+</div>
+<div>
+    <Button>
+    {!session ? (
+                    <Auth />
+                  ) : (
+                    <AddClimaFav key={session.user.id} session={session} />
+                  )}
+                  Hola
+    </Button>
 </div>
         </form>
     )
