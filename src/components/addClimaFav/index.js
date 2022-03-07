@@ -1,1 +1,1 @@
-export {default as AddClimaFav}  from  './AddClimaFav'
+export {default }  from  './AddClimaFav'
