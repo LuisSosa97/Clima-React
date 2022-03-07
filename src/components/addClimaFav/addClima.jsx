@@ -3,11 +3,16 @@ import { supabase } from "../supabaseClient";
 import BuscarCiudad from "../BuscarCiudad/BuscarCiudad";
 
 export default function addClimasFav({session}){
-    const [pais,setPais] = useState(null);
+    /*const [pais,setPais] = useState(null);
+    
     const [ciudad,setCiudad] = useState(null);
     const [fav, setFav] = useState(false);
     const [tempMin,setTempMin] = useState(null);
     const [tempMax,setTempMax] = useState(null);
+    //para el error
+    const [ error, guardarError] = useState(false);
+    //appi
+    const [ resultado, guardarResultado] = useState({});
    
     //usaremos useEffect de hooks para saber en que parte del state sera llamado el metodo consultarApi
     useEffect(() => {
@@ -42,11 +47,11 @@ export default function addClimasFav({session}){
       
         setLoading(false);
  
-}
+}*/
 
 
     async function Agregarclima({ pais, ciudad, tempMin, tempMax  }) {
-        setLoading(true);
+        //setLoading(true);
         let climaid = parseInt( Math.random()*10000 );
         try {            
             const user = supabase.auth.user();
@@ -73,7 +78,7 @@ export default function addClimasFav({session}){
             
             alert(error.message);
         } finally {
-            setLoading(false);
+            //setLoading(false);
         }
     }
 
