@@ -9,7 +9,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import Typography from '@mui/material/Typography';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import addClimasFav from '../addClimaFav/addClima';
+import addClimasFav from '../AddClimaFav/AddClimaFav';
 
 
 function ResultadoClima({resultado}) {
