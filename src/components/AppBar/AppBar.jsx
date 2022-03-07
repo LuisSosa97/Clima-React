@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Divider from "@mui/material/Divider";
 import Tooltip from "@mui/material/Tooltip";
 import { supabase } from "../supabaseClient";
-import  Account  from "../Account";
+import  Account  from "../Account/Account";
 import AddClimaFav  from "../AddClimaFav/AddClimaFav";
 import Auth from "../auth/Auth";
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
