@@ -1,1 +1,1 @@
-export {default as ResultadoClima} from './ResultadoClima'
+export {default } from './ResultadoClima'

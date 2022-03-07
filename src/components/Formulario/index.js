@@ -1,1 +1,1 @@
-export {default as Formulario} from './Formulario'
+export {default } from './Formulario'

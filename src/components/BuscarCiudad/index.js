@@ -1,1 +1,1 @@
-export {default as BuscarCiudad} from "./BuscarCiudad"
+export {default } from "./BuscarCiudad"
